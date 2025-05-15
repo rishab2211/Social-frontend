@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+# 🎨 Full-Stack Social Media App – Frontend (React + Redux)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and fully-featured frontend built using **React.js** and **Redux** for an Instagram-style social media application. This app integrates seamlessly with a Spring Boot backend to deliver a smooth, interactive user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React.js**
+- **Redux Toolkit**
+- **React Router DOM**
+- **Axios** (API Integration)
+- **Tailwind CSS & Aceternity UI** (Design)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎯 Project Goals
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To create a clean, user-friendly frontend interface that connects with RESTful APIs and supports all essential social media functionalities like posting, liking, commenting, user search, and profile management.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## ⚙️ Features
+
+### 🔐 Authentication & Routing
+- Login and Sign-Up with JWT token storage
+- Protected routes and persistent sessions
+
+### 📸 Post Feed & Upload
+- Create posts with image and caption
+- Display dynamic, scrollable feed of posts
+
+### ❤️ Likes & Comments
+- Like/unlike posts instantly
+- Add/delete comments (threaded comments coming soon)
+
+### 🧑‍🤝‍🧑 Follow System
+- Follow/unfollow users
+- Show follower/following count on profiles
+
+### 🔍 User Profiles & Search
+- View public profiles with user posts
+- Search users by name or username
+
+### 📱 Responsive UI
+- Responsive design
+- Clean UI built with Tailwind CSS
+
+---
+
+## 📚 Learning Highlights
+
+- Strong hands-on practice with **React + Redux** architecture
+- Integrated **JWT-based auth** and API security handling
+- Built scalable UI using component-based design
+- Developed clean state management flows with Redux Toolkit
+
+---
+
+## 📡 Backend Repo  
+Backend APIs built with **Java Spring Boot** are available [here](https://github.com/rishab2211/Social)
