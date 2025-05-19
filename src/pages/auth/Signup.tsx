@@ -60,16 +60,16 @@ export function Signup() {
   };
 
   return (
-    <div className="shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
-      <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
-        title
+    <div className="shadow-input mx-auto w-full max-w-md rounded-xl bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
+      <h2 className=" text-lg sm:text-xl font-bold text-neutral-800 dark:text-neutral-200">
+        Join the community now
       </h2>
-      <p className="mt-2 max-w-sm text-sm text-neutral-600 dark:text-neutral-300">
-        Description
+      <p className="mt-2 max-w-sm text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">
+        Create an account to share your thoughts, follow friends, and explore your social feed.
       </p>
 
       <form className="my-8" onSubmit={handleSubmit}>
-        <LabelInputContainer className="mb-4">
+        <LabelInputContainer className="mb-1">
           <Label htmlFor="email">Email Address</Label>
           <Input
             id="email"
@@ -87,7 +87,7 @@ export function Signup() {
             Email field cannot be empty.
           </p>
         </LabelInputContainer>
-        <LabelInputContainer className="mb-4">
+        <LabelInputContainer className="mb-1">
           <Label htmlFor="password">Password</Label>
           <Input
             id="password"
@@ -105,7 +105,7 @@ export function Signup() {
             Password field cannot be empty.
           </p>
         </LabelInputContainer>
-        <LabelInputContainer className="mb-4">
+        <LabelInputContainer className="mb-1">
           <Label htmlFor="confirmpassword">Confirm Password</Label>
           <Input
             id="confirmpassword"
@@ -126,7 +126,7 @@ export function Signup() {
 
         <LabelInputContainer className="space-y-2 ">
           <Label>Gender</Label>
-          <div className="flex items-center justify-evenly mb-5">
+          <div className="flex flex-col gap-1 mb-5 text-xs sm:text-sm">
             <label htmlFor="male" className="flex items-center space-x-2">
               <input
                 type="radio"

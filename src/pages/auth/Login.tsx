@@ -8,7 +8,6 @@ export function Login() {
   const [password, setPassword] = useState("");
   const [emailWarn, setEmailWarn] = useState(false);
   const [passwordWarn, setPasswordWarn] = useState(false);
-  
 
   const resetWarning = () => {
     if (emailWarn && passwordWarn) {
@@ -40,20 +39,19 @@ export function Login() {
     console.log("Form submitted");
     console.log("EMAIL : ", email);
     console.log("PASSWORD :", password);
-    
   };
 
   return (
-    <div className="shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
-      <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
-        title
+    <div className="shadow-input mx-auto w-full max-w-md rounded-xl bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
+      <h2 className="text-lg sm:text-xl font-bold text-neutral-800 dark:text-neutral-200">
+        Welcome back!
       </h2>
-      <p className="mt-2 max-w-sm text-sm text-neutral-600 dark:text-neutral-300">
-        Description
+      <p className="mt-2 max-w-sm text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">
+        Log in to connect with your friends and the world around you.
       </p>
 
       <form className="my-8" onSubmit={handleSubmit}>
-        <LabelInputContainer className="mb-4">
+        <LabelInputContainer className="mb-1">
           <Label htmlFor="email">Email Address</Label>
           <Input
             id="email"
@@ -71,7 +69,7 @@ export function Login() {
             Email field cannot be empty
           </p>
         </LabelInputContainer>
-        <LabelInputContainer className="mb-4">
+        <LabelInputContainer className="mb-1">
           <Label htmlFor="password">Password</Label>
           <Input
             id="password"
@@ -90,7 +88,6 @@ export function Login() {
           </p>
         </LabelInputContainer>
 
-    
         <button
           className="group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
           type="submit"
