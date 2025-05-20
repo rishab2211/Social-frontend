@@ -53,10 +53,8 @@ export function Signup() {
     console.log("Form submitted");
     console.log("EMAIL : ", email);
     console.log("PASSWORD :", password);
-    console.log("CONFIRM PASSWORD :",confirmPassword);
-    console.log("GENDER :",gender);
-    
-    
+    console.log("CONFIRM PASSWORD :", confirmPassword);
+    console.log("GENDER :", gender);
   };
 
   return (
@@ -65,7 +63,8 @@ export function Signup() {
         Join the community now
       </h2>
       <p className="mt-2 max-w-sm text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">
-        Create an account to share your thoughts, follow friends, and explore your social feed.
+        Create an account to share your thoughts, follow friends, and explore
+        your social feed.
       </p>
 
       <form className="my-8" onSubmit={handleSubmit}>
@@ -135,6 +134,7 @@ export function Signup() {
                 value="male"
                 checked={gender === "male"}
                 onChange={(e) => setGender(e.target.value)}
+                className="cursor-pointer"
               />
               <span className="text-white">MALE</span>
             </label>
@@ -145,6 +145,7 @@ export function Signup() {
                 value="female"
                 checked={gender === "female"}
                 onChange={(e) => setGender(e.target.value)}
+                className="cursor-pointer"
               />
               <span className="text-white">FEMALE</span>
             </label>
@@ -155,6 +156,7 @@ export function Signup() {
                 value="other"
                 checked={gender === "other"}
                 onChange={(e) => setGender(e.target.value)}
+                className="cursor-pointer"
               />
               <span className="text-white">PREFER NOT TO SAY</span>
             </label>
@@ -162,7 +164,7 @@ export function Signup() {
         </LabelInputContainer>
 
         <button
-          className="group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
+          className=" cursor-pointer group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
           type="submit"
         >
           Sign up &rarr;
